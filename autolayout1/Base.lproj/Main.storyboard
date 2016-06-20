@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autolayout1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxf-g6-vnu">
+                                <color key="backgroundColor" red="0.38948092899999998" green="0.37779543189999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LQO-dW-cLb"/>
+                                    <constraint firstAttribute="width" constant="200" id="MfT-ex-f9n"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIE-cX-eog">
+                                <color key="backgroundColor" red="1" green="0.2338921159" blue="0.16791623820000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37e-8h-5ba">
+                                <color key="backgroundColor" red="1" green="0.93305236790000001" blue="0.1650523283" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uIE-cX-eog" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0ax-gr-VHf"/>
+                            <constraint firstItem="uIE-cX-eog" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="6f5-ZS-fOB"/>
+                            <constraint firstItem="37e-8h-5ba" firstAttribute="leading" secondItem="uIE-cX-eog" secondAttribute="trailing" constant="8" id="713-mr-FiF"/>
+                            <constraint firstItem="vxf-g6-vnu" firstAttribute="top" secondItem="37e-8h-5ba" secondAttribute="bottom" constant="8" id="BVk-W6-2RD"/>
+                            <constraint firstItem="37e-8h-5ba" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Nvi-8g-ng0"/>
+                            <constraint firstItem="37e-8h-5ba" firstAttribute="width" secondItem="uIE-cX-eog" secondAttribute="width" id="fv5-FS-dVx"/>
+                            <constraint firstItem="vxf-g6-vnu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oxN-Z1-BCP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="37e-8h-5ba" secondAttribute="trailing" constant="8" id="yYg-58-RTg"/>
+                            <constraint firstItem="vxf-g6-vnu" firstAttribute="top" secondItem="uIE-cX-eog" secondAttribute="bottom" constant="8" id="yid-Uh-hie"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vxf-g6-vnu" secondAttribute="bottom" constant="50" id="yuY-uC-mi6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
 </document>
